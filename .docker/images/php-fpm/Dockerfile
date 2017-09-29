@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
 	libicu-dev \
 	mysql-client \
 	&& docker-php-ext-install pdo_mysql \
+	&& docker-php-ext-install mysqli \
 	&& docker-php-ext-install iconv \
 	&& docker-php-ext-install mcrypt \
 	&& docker-php-ext-install intl \
