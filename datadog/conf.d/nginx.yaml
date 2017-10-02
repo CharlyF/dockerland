@@ -1,0 +1,7 @@
+docker_images:
+  - stub_nginx
+init_config:
+
+instances:
+
+  - nginx_status_url: http://nginx-app/nginx_status/

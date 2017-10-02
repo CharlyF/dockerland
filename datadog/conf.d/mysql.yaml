@@ -1,0 +1,9 @@
+docker_images:
+  - mysql
+init_config:
+
+instances:
+  - server: db
+    port: 3306
+    user: logger
+    pass: password
