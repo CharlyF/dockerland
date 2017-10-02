@@ -30,6 +30,14 @@ function get_tags() {
 
     function drawChart() {
       var jsonarray = <?php print get_tags(); ?>;
+      console.log(jsonarray)
+      for(var i = 0; i<jsonarray.length; i++) {
+          console.log(jsonarray)
+          if jsonarray[i][3] !== null {
+            jsonarray[i][3] = new Date(jsonarray[i][3]);
+            console.log(jsonarray)
+          }
+      }
 
       var otherData = new google.visualization.DataTable();
       otherData.addColumn('string', 'Task ID');
@@ -45,7 +53,7 @@ function get_tags() {
       var options = {
         height: 500,
         gantt: {
-          defaultStartDateMillis: new Date(2015, 3, 28)
+          defaultStartDateMillis: new Date(2017, 9, 29)
         }
       };
 
