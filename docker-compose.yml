@@ -43,7 +43,7 @@ services:
      - phpfpm
      - nginx-app
     environment:
-     - API_KEY=1494478d3c9ecd25178256e8b7c1fde4
+     - API_KEY=**
      - SD_BACKEND=docker
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
